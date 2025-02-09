@@ -38,12 +38,18 @@ nav {
   width: auto;
 }
 
-nav a {
+nav ul {
   text-decoration: none;
   color: white;
   padding: 0.5rem;
-  display: inline-block;
+  display: inline-flex;
 } 
+
+nav ul li a{
+  text-decoration: none;
+  margin-left: 10px;
+  color: white;
+}
 
 /* Main Content */
 main {
@@ -56,7 +62,6 @@ main {
 }
 
 .store-item {
-  display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
@@ -66,6 +71,11 @@ main {
   height: auto;
   width: 100%;
   min-height: 250px;
+  flex-wrap: wrap;
+}
+
+.store-item p{
+  padding-bottom: 1rem;
 }
 
 .store-item img {
@@ -75,9 +85,9 @@ main {
   object-fit: contain;
 }
 
-.item-details {
-  text-align: center;
-  margin-bottom: 0.5rem;
+.store-item span {
+  padding-right: 1rem;
+  padding-left: 1rem;
 }
 
 /* Footer */
